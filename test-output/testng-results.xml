@@ -1,44 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-29T16:01:36Z" name="Default suite" finished-at="2020-06-29T16:02:18Z" duration-ms="41667">
+  <suite name="Default suite" duration-ms="36991" started-at="2020-06-29T20:36:30Z" finished-at="2020-06-29T20:37:07Z">
     <groups>
     </groups>
-    <test started-at="2020-06-29T16:01:36Z" name="Default test" finished-at="2020-06-29T16:02:18Z" duration-ms="41667">
+    <test name="Default test" duration-ms="36991" started-at="2020-06-29T20:36:30Z" finished-at="2020-06-29T20:37:07Z">
       <class name="travelSite.SeleniumPOC.Booking">
-        <test-method is-config="true" signature="init()[pri:0, instance:travelSite.SeleniumPOC.Booking@3d6f0054]" started-at="2020-06-29T16:01:36Z" name="init" finished-at="2020-06-29T16:01:43Z" duration-ms="6485" status="PASS">
+        <test-method status="PASS" signature="init()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="init" is-config="true" duration-ms="9931" started-at="2020-06-29T20:36:30Z" finished-at="2020-06-29T20:36:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="launchURL()[pri:0, instance:travelSite.SeleniumPOC.Booking@3d6f0054]" started-at="2020-06-29T16:01:43Z" name="launchURL" finished-at="2020-06-29T16:01:49Z" duration-ms="5801" status="PASS">
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="launchURL" duration-ms="6191" started-at="2020-06-29T20:36:40Z" finished-at="2020-06-29T20:36:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="carRentals()[pri:0, instance:travelSite.SeleniumPOC.Booking@3d6f0054]" started-at="2020-06-29T16:01:49Z" name="carRentals" finished-at="2020-06-29T16:01:55Z" depends-on-methods="travelSite.SeleniumPOC.Booking.launchURL" duration-ms="6312" status="PASS">
+        <test-method status="PASS" signature="carRentals()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="carRentals" duration-ms="3334" started-at="2020-06-29T20:36:46Z" depends-on-methods="travelSite.SeleniumPOC.Booking.launchURL" finished-at="2020-06-29T20:36:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- carRentals -->
-        <test-method signature="selectTripType()[pri:0, instance:travelSite.SeleniumPOC.Booking@3d6f0054]" started-at="2020-06-29T16:01:55Z" name="selectTripType" finished-at="2020-06-29T16:01:55Z" depends-on-methods="travelSite.SeleniumPOC.Booking.carRentals" duration-ms="228" status="PASS">
+        <test-method status="PASS" signature="selectTripType()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="selectTripType" duration-ms="215" started-at="2020-06-29T20:36:49Z" depends-on-methods="travelSite.SeleniumPOC.Booking.carRentals" finished-at="2020-06-29T20:36:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTripType -->
-        <test-method signature="selectDriveFromAddress()[pri:0, instance:travelSite.SeleniumPOC.Booking@3d6f0054]" started-at="2020-06-29T16:01:55Z" name="selectDriveFromAddress" finished-at="2020-06-29T16:01:57Z" depends-on-methods="travelSite.SeleniumPOC.Booking.selectTripType" duration-ms="1873" status="PASS">
+        <test-method status="PASS" signature="selectDriveFromAddress()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="selectDriveFromAddress" duration-ms="2752" started-at="2020-06-29T20:36:49Z" depends-on-methods="travelSite.SeleniumPOC.Booking.selectTripType" finished-at="2020-06-29T20:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDriveFromAddress -->
-        <test-method signature="selectDriveToAddress()[pri:0, instance:travelSite.SeleniumPOC.Booking@3d6f0054]" started-at="2020-06-29T16:01:57Z" name="selectDriveToAddress" finished-at="2020-06-29T16:02:02Z" depends-on-methods="travelSite.SeleniumPOC.Booking.selectDriveFromAddress" duration-ms="5215" status="PASS">
+        <test-method status="PASS" signature="selectDriveToAddress()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="selectDriveToAddress" duration-ms="1579" started-at="2020-06-29T20:36:52Z" depends-on-methods="travelSite.SeleniumPOC.Booking.selectDriveFromAddress" finished-at="2020-06-29T20:36:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDriveToAddress -->
-        <test-method signature="search()[pri:0, instance:travelSite.SeleniumPOC.Booking@3d6f0054]" started-at="2020-06-29T16:02:02Z" name="search" finished-at="2020-06-29T16:02:18Z" depends-on-methods="travelSite.SeleniumPOC.Booking.selectDriveToAddress" duration-ms="15629" status="PASS">
+        <test-method status="PASS" signature="search()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="search" duration-ms="4399" started-at="2020-06-29T20:36:54Z" depends-on-methods="travelSite.SeleniumPOC.Booking.selectDriveToAddress" finished-at="2020-06-29T20:36:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method signature="searchPageLoad()[pri:0, instance:travelSite.SeleniumPOC.Booking@3d6f0054]" started-at="2020-06-29T16:02:18Z" name="searchPageLoad" finished-at="2020-06-29T16:02:18Z" depends-on-methods="travelSite.SeleniumPOC.Booking.search" duration-ms="80" status="PASS">
+        <test-method status="PASS" signature="searchPageLoad()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="searchPageLoad" duration-ms="7028" started-at="2020-06-29T20:36:58Z" depends-on-methods="travelSite.SeleniumPOC.Booking.search" finished-at="2020-06-29T20:37:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageLoad -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:travelSite.SeleniumPOC.Booking@63440df3]" name="tearDown" is-config="true" duration-ms="1515" started-at="2020-06-29T20:37:05Z" finished-at="2020-06-29T20:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- travelSite.SeleniumPOC.Booking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

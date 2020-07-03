@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,  3 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="selectDriveFromAddress">selectDriveFromAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="searchPageLoad">searchPageLoad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="selectDriveToAddress">selectDriveToAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,26 +150,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="searchPageLoad">searchPageLoad</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="selectDriveFromAddress">selectDriveFromAddress</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="selectDriveToAddress">selectDriveToAddress</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="travelSite.SeleniumPOC.Booking" class="method navigator-link" hash-for-method="selectTripType">selectTripType</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -147,6 +165,94 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">travelSite.SeleniumPOC.Booking</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectDriveFromAddress">
+                  </a> <!-- selectDriveFromAddress -->
+                  <span class="method-name">selectDriveFromAddress</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;GOA&apos;)] (tried for 30 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Krushna&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50877}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\Subrat\AppData\Local\Temp\scoped_dir14240_1256612360}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 06f9e5a486b035e75c1fe852e77eca4d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:265)
+	at travelSite.SeleniumPOC.Booking.selectDriveFromAddress(Booking.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;GOA&apos;)]&quot;}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Krushna&apos;, ip: &apos;192.168.1.23&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50877}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\Subrat\AppData\Local\Temp\scoped_dir14240_1256612360}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 06f9e5a486b035e75c1fe852e77eca4d
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;GOA&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 30 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">travelSite.SeleniumPOC.Booking</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Booking.search()[pri:0, instance:travelSite.SeleniumPOC.Booking@6d3a388c] depends on not successfully finished methods
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchPageLoad">
+                  </a> <!-- searchPageLoad -->
+                  <span class="method-name">searchPageLoad</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Booking.searchPageLoad()[pri:0, instance:travelSite.SeleniumPOC.Booking@6d3a388c] depends on not successfully finished methods
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectDriveToAddress">
+                  </a> <!-- selectDriveToAddress -->
+                  <span class="method-name">selectDriveToAddress</span>
+                  <div class="stack-trace">java.lang.Throwable: Method Booking.selectDriveToAddress()[pri:0, instance:travelSite.SeleniumPOC.Booking@6d3a388c] depends on not successfully finished methods
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -165,34 +271,6 @@
                   <a name="launchURL">
                   </a> <!-- launchURL -->
                   <span class="method-name">launchURL</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="search">
-                  </a> <!-- search -->
-                  <span class="method-name">search</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchPageLoad">
-                  </a> <!-- searchPageLoad -->
-                  <span class="method-name">searchPageLoad</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectDriveFromAddress">
-                  </a> <!-- selectDriveFromAddress -->
-                  <span class="method-name">selectDriveFromAddress</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectDriveToAddress">
-                  </a> <!-- selectDriveToAddress -->
-                  <span class="method-name">selectDriveToAddress</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -258,38 +336,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'search')
+data.setCell(0, 1, 'selectDriveFromAddress')
 data.setCell(0, 2, 'travelSite.SeleniumPOC.Booking')
-data.setCell(0, 3, 11284);
+data.setCell(0, 3, 30917);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'launchURL')
 data.setCell(1, 2, 'travelSite.SeleniumPOC.Booking')
-data.setCell(1, 3, 4418);
+data.setCell(1, 3, 4447);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'carRentals')
 data.setCell(2, 2, 'travelSite.SeleniumPOC.Booking')
-data.setCell(2, 3, 3712);
+data.setCell(2, 3, 2194);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'selectDriveToAddress')
+data.setCell(3, 1, 'selectTripType')
 data.setCell(3, 2, 'travelSite.SeleniumPOC.Booking')
-data.setCell(3, 3, 3533);
+data.setCell(3, 3, 1928);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'selectDriveFromAddress')
+data.setCell(4, 1, 'search')
 data.setCell(4, 2, 'travelSite.SeleniumPOC.Booking')
-data.setCell(4, 3, 2816);
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'selectTripType')
+data.setCell(5, 1, 'searchPageLoad')
 data.setCell(5, 2, 'travelSite.SeleniumPOC.Booking')
-data.setCell(5, 3, 317);
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'searchPageLoad')
+data.setCell(6, 1, 'selectDriveToAddress')
 data.setCell(6, 2, 'travelSite.SeleniumPOC.Booking')
-data.setCell(6, 3, 198);
+data.setCell(6, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -322,35 +400,25 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">launchURL</span>
-                <span class="method-start">6252 ms</span>
+                <span class="method-start">9426 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">carRentals</span>
-                <span class="method-start">10675 ms</span>
+                <span class="method-start">13877 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectTripType</span>
-                <span class="method-start">14389 ms</span>
+                <span class="method-start">16073 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">selectDriveFromAddress</span>
-                <span class="method-start">14707 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectDriveToAddress</span>
-                <span class="method-start">17524 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">search</span>
-                <span class="method-start">21058 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchPageLoad</span>
-                <span class="method-start">32343 ms</span>
+                <span class="method-start">18001 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32542 ms</span>
+                <span class="method-start">48935 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
