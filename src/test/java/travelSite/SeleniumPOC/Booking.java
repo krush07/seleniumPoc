@@ -26,7 +26,7 @@ public class Booking {
 	@BeforeClass 
 	public void init() throws Exception {
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream(".\\config.properties");
+		FileInputStream fis = new FileInputStream("./config.properties");
 		prop.load(fis);
 		
 		String operatingSysName = prop.getProperty("opertingSystem");
@@ -36,20 +36,20 @@ public class Booking {
 		if(prop.getProperty("opertingSystem").equalsIgnoreCase("windows")) 
 		{
 			//ChromeDriver
-			System.setProperty("webdriver.chrome.driver",".\\drivers\\windows\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","./drivers/windows/chromedriver.exe");
 			driver = new ChromeDriver();
 			
 			
 		}else if(prop.getProperty("opertingSystem").equalsIgnoreCase("mac")) 
 		{
-			System.setProperty("webdriver.chrome.driver",".\\drivers\\mac\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","./drivers/mac/chromedriver.exe");
 			driver = new ChromeDriver();
 			
 		}
 		
 		else if(prop.getProperty("browser").equalsIgnoreCase("linux")) 
 		{
-			System.setProperty("webdriver.chrome.driver",".\\drivers\\linux\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","./drivers/linux/chromedriver.exe");
 			driver = new ChromeDriver();
 			
 		}
