@@ -3,19 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="travelSite.SeleniumPOC.Booking">
+      <class name="travelSite.SeleniumPOC.TestingImage">
         <methods>
-          <include name="launchURL"/>
-          <include name="selectDriveToAddress"/>
-          <include name="tearDown"/>
-          <include name="selectTripType"/>
-          <include name="carRentals"/>
-          <include name="selectDriveFromAddress"/>
-          <include name="search"/>
-          <include name="searchPageLoad"/>
+          <include name="basicTest"/>
+          <include name="afterEach"/>
+          <include name="setBatch"/>
+          <include name="beforeEach"/>
           <include name="init"/>
         </methods>
-      </class> <!-- travelSite.SeleniumPOC.Booking -->
+      </class> <!-- travelSite.SeleniumPOC.TestingImage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
